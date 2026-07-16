@@ -1,0 +1,35 @@
+{
+  "name": "clean-arch",
+  "version": "1.0.0",
+  "description": "Simple Node.js Clean Architecture example with SOLID",
+  "main": "dist/main/server.js",
+  "scripts": {
+    "dev": "tsx src/main/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "fastify": "^5.10.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.1",
+    "@typescript-eslint/eslint-plugin": "^8.64.0",
+    "@typescript-eslint/parser": "^8.64.0",
+    "eslint": "^10.7.0",
+    "prettier": "^3.9.5",
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.10"
+  }
+}
